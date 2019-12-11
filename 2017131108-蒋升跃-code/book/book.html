@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>联盟机票</title>
+		<link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="mystyle.css"/>
+		<script src="myjs.js"></script>
+	</head>
+	<body>
+		<div class="nav_top">
+			<div class="containier clear_float">
+				<div class="fl">
+					<a class="item" href="#">首页</a>
+				</div>
+				<div class="fr">
+					<a class="item" href="#">登陆</a>
+					<span>|</span>
+					<a class="item" href="#">注册</a>
+				</div>
+			</div>
+		</div>
+		<div class="prohead">
+			<div class="containier clear_float">
+				<div id="head">
+					<span id="head_font">
+						联盟机票
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class='top2'>
+		        <p>
+		            <h2><a href="http://www.dlnu.edu.cn/" id="book">机票预订</a></h2>
+		        </p>
+		        <p>
+		            <hr />
+		        </p>
+		        <div>
+		            <h3 id='top3'>航班信息</h3>
+		            <p id="information">&emsp;&emsp;海南航空 &emsp;MK7788 &emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		                <a href="http://www.dlnu.edu.cn/">[修改航班]</a>&emsp;
+						<a href="http://www.dlnu.edu.cn/">[退改签]</a>&emsp;&emsp;2017年1月10日&nbsp;11:00&emsp; &nbsp;周水子机场--起飞
+		                <br>&emsp;&emsp;飞机机型 &emsp;730 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;经停 &emsp;
+						<a href="http://www.dlnu.edu.cn/">[修改航班]</a> 
+						&emsp; &emsp; &emsp; &emsp; &emsp;2017年1月10号&nbsp;10:00&nbsp;&nbsp;&nbsp;&nbsp;浦东机场--降落
+					</p>
+		            <hr/>
+		        </div>
+		
+		        <div>
+		            <p id='top3'><span id='fsize'><B>乘客信息</B></span>
+		                <span><font color="red">请填写乘客信息（姓名，证件号码),以免在办理手续的过程中出现问题</font></span></p>
+		            <p id='p1'>在常用姓名中选择<input type="text" />
+		                <input name="刘" type="checkbox" value="刘某某" onClick="addDiv()" />刘
+		                <input name="张" type="checkbox" value="" onClick="addDiv()" />张
+		                <input name="王" type="checkbox" value="" onClick="addDiv()" />王
+		                <input name="李" type="checkbox" value="" onClick="addDiv()" />李</p>
+		        </div>
+		        <div id='bor'>
+		            <div>
+		                <p id='p1'>请输入乘机人：<input id="user1" type="text" onClick="check1()" />
+		                    <span id="n1" style="display:none;color:#f00;"> 用户名不能为空</span><br />
+		                    <hr/>
+		                    <p id='p1'>购票类型：<select name="types" style="width:150px; height:25px;">
+		    <option value="成人票" >成人票</option>
+		    <option value="残疾票">残疾票</option>
+		    <option value="儿童票">儿童票</option></select>￥2000/成人（含税费）</p>
+		                    <p id='p1'> 姓 &emsp; 名 ：<input type="text" size="17" /></p>
+		                    <p id='p1'>证件类型：<select name="证件" style="width:150px; height:25px;">
+		    <option value="居民身份证" >居民身份证</option>
+		    <option value="护照">护照</option>
+		    <option value="居民暂住证">居民暂住证</option></select></p>
+		                    <p id='p1'>证件号码：<input type="text" size="17" /></p>
+		            </div>
+		        </div>
+		        <p id='p2'><input type="button" value="增加乘客" onClick="addDiv()" id="Add" /></p>
+		        <p id='top3'><span id='fsize'><B>联系人信息</B></span>
+		            <span><font color="red">请正确填写联系人信息（联系人，手机号码，E-mail），以便我们向您联系</font></span></p>
+		
+		
+		        <div id='bor'>
+		            <p id='p1'>联 系 人：<input id="user3" type="text" size="17" onclick="check3()" />
+		                <span id="n3" style="display:none;color:#f00;"> 用户名不能为空</span></p>
+		            <p id='p1'>手机号码：<input id="user4" type="text" size="17" onclick="check4()" />
+		                <span id="n4" style="display:none;color:#f00;"> 号码必须为数字</span></p>
+		            <p id='p1'>联系号码：<input id="user5" type="text" size="17" onMouseOut="check5()" />
+		                <span id="n5" style="display:none;color:#f00;"> 号码错误</span></p>
+		            <p id='p1'>传真号码：<input id="user6" type="text" size="17" onMouseOut="check6()" />
+		                <span id="n6" style="display:none;color:#f00;"> 号码错误</span></p>
+		            <p id='p1'> E-mail ：<input id="user7" type="text" size="17" onMouseOut="check7()" />
+		                <span id="n7" style="display:none;color:#f00;"> 注意邮箱地址</span></p>
+		            <p id='p1'>联系地址：<input id="user8" type="text" size="17" onclick="check8()" />
+		                <span id="n8" style="display:none;color:#f00;"> 地址不能为空</span></p>
+		        </div>
+		    </div>
+		</body>
+		<div class="profooter clear_float">
+			<div class="containier">
+				<span class="profooter_font">
+					<a>关于网站</a>
+					<span>|</span>
+					<a>联系我们</a>
+					<span>|</span>
+					<a>大连民族大学官网</a>
+					<span>|</span>
+					<a>关于开发者</a>
+				</span>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="containier clear_float">
+				<div class="col_6">
+					<div>
+						版权所有：大连民族大学 学校地址：大连经济技术开发区辽河西路18号 邮编：116600 
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
